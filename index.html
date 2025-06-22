@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Product Viewer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="webglCanvas"></canvas>
+    <div id="infoPanel"></div>
+    <div
+      id="instructions"
+      style="
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-size: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        z-index: 10;
+      "
+    >
+      <strong>Instructions:</strong> Click on any part of the chair to highlight
+      and learn its name.
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
